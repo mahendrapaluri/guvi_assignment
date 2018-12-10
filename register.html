@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1"><!--Mobile first width depends on device-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+	<title>registration</title>
+	<script src="validate.js"></script>
+	<link rel="stylesheet" type="text/css" href="login.css">
+</head>
+<body>
+	<div class="container-fluid">
+					<h1 align="center">Registration</h1>
+					<div class="shadow">
+					<form role="form" class="regi_form" method="post">
+						<div class="container-fluid">
+							<div class="form-group">
+								<label for="name" class="col-sm-3">Name<font color="red">*</font></label>
+								<div class="input-group col-md-7">
+									<span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
+									<input type="text" name="name" class="form-control" placeholder="Enter your name" pattern="[A-z]{4,}" title="Name should contain only characters with minimum 4" required>
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="age" class="col-sm-3">Age<font color="red">*</font></label>
+								<div class="input-group col-md-7">
+									<span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
+									<input type="text" name="age" class="form-control" placeholder="Enter your Age" pattern="^\d{1,2}$" required>
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="gender" class="col-sm-3">Gender<font color="red">*</font></label>
+								<div class="input-group">
+									<input type="radio" name="gender" value="male" checked>Male&nbsp;
+									<input type="radio" name="gender" value="female">Female&nbsp;
+									<input type="radio" name="gender" value="others">Others
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="degree" class="col-sm-3">Degree<font color="red">*</font></label>
+								<div class="input-group col-md-7">
+									<span class="input-group-addon"><i class="fas fa-graduation-cap"></i></span>
+									<select class="form-control" name="degree">
+										<option value="" selected="select option">select option</option>
+										<option value="b.tech">B.Tech</option>
+										<option value="mtech">MTech</option>
+										<option value="mbbs">MBBS</option>
+										<option value="mba">MBA</option>
+										<option value="phd">PHD</option>
+									</select>
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="email" class="col-sm-3">Email<font color="red">*</font></label>
+								<div class="input-group col-md-7">
+									<span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span></span>
+									<input type="email" name="email" class="form-control" placeholder="Enter your email id" pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" required>
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="password" class="col-sm-3">Password<font color="red">*</font></label>
+								<div class="input-group col-md-7">
+									<span class="input-group-addon"><i class="fas fa-unlock"></i></span></span>
+									<input type="password"  name="password" class="form-control" id="password" title="password should contain atleast 1 character and 1 caps and 1 number min 8 characters" placeholder="Enter your password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>	
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="password" class="col-sm-3">Confirm Password<font color="red">*</font></label>
+								<div class="input-group col-md-7">
+									<span class="input-group-addon"><i class="fas fa-unlock"></i></span></span>
+									<input type="password" name="re-password" class="form-control" id="re-password" placeholder="Re-enter your password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>	
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="phone_number" class="col-sm-3">Phone Number<font color="red">*</font></label>
+								<div class="input-group col-md-7">
+									<span class="input-group-addon"><i class="fas fa-mobile-alt"></i></span>
+									<input type="text" name="phone_number" class="form-control"  placeholder="Enter your mobile number" pattern="[0-9]{10}" required>
+								</div>
+							</div>
+							<div class="col-sm-4">
+									<input class="form-control" id="form_submit" type="submit" name="submit" value="register" disabled="disabled">
+							</div>
+							<div class="col-sm-4">
+									<input class="form-control" type="reset" name="reset" value="reset">
+							</div>
+						</div>	
+					</form>
+				</div>
+			</div>
+			<ul></ul>
+	</body>
+</html>
